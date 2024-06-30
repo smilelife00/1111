@@ -1,0 +1,97 @@
+/* Button Styles */
+QPushButton {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #4CAF50, stop: 1 #45a049); /* 渐变背景 */
+    color: white; /* 文本颜色 */
+    padding: 10px; /* 内边距 */
+    border: 1px solid #4CAF50; /* 边框设置 */
+    border-radius: 5px; /* 边框圆角 */
+    font-weight: bold; /* 字体加粗 */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #45a049, stop: 1 #4CAF50); /* 鼠标悬停时的背景渐变 */
+}
+
+QPushButton:pressed {
+    background-color: #3e8e41; /* 按钮被按下时的背景颜色 */
+}
+
+QPushButton:disabled {
+    background-color: #cccccc; /* 按钮禁用时的背景颜色 */
+    color: #666666; /* 按钮禁用时的文字颜色 */
+}
+
+/* Label Styles */
+QLabel {
+    color: #1d1d1d; /* 文本颜色 */
+    font-weight: bold; /* 字体权重 */
+    font-size: 12pt
+}
+QTableWidget {
+    gridline-color: #ccc;
+}
+/* Input Field Styles */
+QLineEdit, QDateEdit, QComboBox, QSpinBox {
+    padding: 5px; /* 内边距 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 5px; /* 边框圆角 */
+    background: #ffffff; /* 背景颜色 */
+}
+
+/* Tab Widget Styles */
+QTabWidget::pane {
+    border-top: 1px solid #ccc; /* 选项卡上边框 */
+}
+
+QTabBar::tab {
+    min-width: 100px; /* 调整最小宽度 */
+    min-height: 30px; /* 调整最小高度 */
+    background: #f2f2f2; /* 背景颜色 */
+    padding: 10px 20px; /* 内边距 */
+    border: 1px solid #cccccc; /* 边框 */
+    border-bottom-color: #8c8b92; /* 选项卡下边框颜色 */
+    border-top-left-radius: 5px; /* 左上圆角 */
+    border-top-right-radius: 5px; /* 右上圆角 */
+}
+
+QTabBar::tab:selected{
+    background: #ffffff; /* 选中或悬停的背景颜色 */
+    font-weight: bold; /* 字体权重 */
+}
+
+QTabBar::tab:hover {
+    background: #ffffff; /* 选中或悬停的背景颜色 */
+}
+
+QTabBar::tab:selected {
+    border-color: #4CAF50; /* 选中的边框颜色 */
+    border-bottom-color: transparent; /* 合并选项卡和面板 */
+    padding: 10px; /* 内边距 */
+}
+
+
+/* Table View Styles */
+QTableView {
+    selection-background-color: #4173ad; /* 选中行的背景颜色 */
+    selection-color: white; /* 选中行的文字颜色 */
+}
+
+QHeaderView::section {
+    background-color: #ffffff; /* 标题栏背景颜色 */
+    color: rgb(0, 0, 0); /* 标题栏文字颜色 */
+    padding: 4px; /* 内边距 */
+    border: 1px solid #d3d0d0; /* 标题栏边框 */
+}
+
+/* Scroll Bar Styles */
+QScrollBar:vertical {
+    border: 1px solid #747474; /* 边框 */
+    background: white; /* 背景颜色 */
+    width: 10px; /* 宽度 */
+    margin: 22px 0 22px 0; /* 外边距 */
+}
+
+QScrollBar::handle:vertical {
+    background: #6b6b6b; /* 滚动条手柄颜色 */
+    min-height: 20px; /* 最小高度 */
+}
